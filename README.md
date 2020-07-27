@@ -71,7 +71,7 @@ The target is 1 when the return of tesla for the next day is a positve value, an
 ![lstm](images/lstm.png)
 
 - Gradient Boosting Classifier
-    - We used a set of parameteres to systimatically run all possible combinations in the model. In this way, we can select an optimal one to make sure that we explore all possibilites with regard to parameters setting. 
+    - We used a set of parameteres to systimatically run all possible combinations in the model. To do so, we used Grid Search function that uses a dictionary to store all of the algorithms parmeters as the key, where the value is the list of ranges for each parametr.In this way, we can select an optimal values for the parameters to make sure that we explore all possibilites with regard to parameters setting. 
        
 ![gradientboostingC](images/g_b_class.png)
 
@@ -88,14 +88,14 @@ The target is 1 when the return of tesla for the next day is a positve value, an
 - K-nearest neighbors
 
 ![knn](images/elbow_curve.png)
-- K=2 based on the fact that the biggest drop is from 1 to 2
+- K=2 based on the fact that the biggest drop is from 1 to 2.
 
 ![knn](images/knn_report.png)
 ![knn](images/knn_pic.png)
 
 
 ## Conclusion: 
-Gradient Boosting Classifier has the highest accuracy score at 0.56, whereas LSTM Classifier has the lowest accuracy score at 0.43.
+KNN Classifier has the highest accuracy score at 0.57, whereas LSTM Classifier has the lowest accuracy score at 0.43.
 We have listed all classifiers accuracy scores below:
 - SVM accuracy socre: 0.55
 - Desicion Tree classifier accuracy score: 0.50
