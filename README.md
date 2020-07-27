@@ -7,11 +7,12 @@
 - Aljohara Aloudan
 
 ## Core message:
+
 Our goal of this project is finding which ML algorithm has the best forecasting accuracy score.  We ran several ML Algorithms both supervised and unsupervised and compared their performance. 
 
 
-
 ## Data Preparation:
+
 We used Alpaca API to retrieve stock data of Tesla and TLT. We used closing prices and volume for both stocks and to better fit the ML algorithms, we calculated the daily returns for both features. 
 
 The next step was to add a sentiment feature. In order ot achieve that we pulled news articles from Gnews and Stock News API. For each day, we selected articles within three days before and calculated the mean compound from all API sources. 
